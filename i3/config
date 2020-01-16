@@ -29,8 +29,8 @@ new_window 1pixel
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec dotfiles-default-terminal
-bindsym $mod+Shift+Return exec termite --class FLOATING
+bindsym $mod+Return exec terminator
+bindsym $mod+Shift+Return exec terminator --class FLOATING
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -43,7 +43,7 @@ bindsym $mod+Shift+c exec "gnome-screenshot -i"
 
 # App shortcuts
 bindsym $mod+Shift+w exec "firefox"
-bindsym $mod+w exec "surf"
+bindsym $mod+w exec "brave"
 
 # move focus:
 bindsym $mod+Left focus left

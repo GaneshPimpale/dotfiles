@@ -1,5 +1,6 @@
-if [ -x $(which light) ]; then
-	light -A $1;
-else
+#!/bin/zsh
+if ! type "$light" > /dev/null; then
 	xbacklight -inc $1;
+else
+	light -A $1;
 fi

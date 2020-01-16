@@ -1,5 +1,6 @@
-if [ -x $(which light) ]; then
-	light -U $1
-else
+#!/bin/zsh
+if ! type "$light" > /dev/null; then
 	xbacklight -dec $1
+else
+	light -U $1
 fi
