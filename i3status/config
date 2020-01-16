@@ -33,6 +33,7 @@ ethernet _first_ {
 }
 
 battery all {
+        path = "/sys/class/power_supply/CMB%d/uevent"
         format = "Power: %status %percentage %remaining"
 }
 
