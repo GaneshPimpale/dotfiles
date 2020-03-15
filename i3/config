@@ -126,7 +126,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-msg exit"
 
 # lock
-bindsym $mod+e exec i3lock -i ~/dotfiles/assets/jupiter.png
+bindsym $mod+e exec i3lock -i ~/dotfiles/assets/background.png
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -219,4 +219,4 @@ exec --no-startup-id "compton"
 exec --no-startup-id "nm-applet"
 exec --no-startup-id "blueman-applet"
 exec --no-startup-id "nitrogen --restore"
-# exec --no-startup-id "xss-lock -- i3lock -n -i ~/dotfiles/assets/jupiter.png"’
+exec --no-startup-id "xss-lock -- i3lock -n -i ~/dotfiles/assets/background.png"
