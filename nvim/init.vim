@@ -65,6 +65,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'zchee/deoplete-clang'
 Plugin 'zchee/deoplete-jedi'
+Plugin 'FreeFem-parser-vim'
 
 if vundle_installed == 0
   echo "installing"
