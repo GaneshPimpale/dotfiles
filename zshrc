@@ -143,3 +143,5 @@ unalias 9
 export PLAN9="/lib/plan9"
 export PATH=$PATH:$PLAN9/bin
 [ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+
+source ~/.onshaperc

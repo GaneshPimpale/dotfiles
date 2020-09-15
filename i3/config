@@ -126,7 +126,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-msg exit"
 
 # lock
-bindsym $mod+e exec i3lock -i ~/dotfiles/assets/background.png
+bindsym $mod+e exec i3lock -i ~/dotfiles/assets/background2.png
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -215,8 +215,9 @@ bindsym $mod+m exec "/usr/local/bin/switch-audio-port"
 
 # Autostart apps
 exec amixer sset Master 0% && pkill -RTMIN+1 i3blocks
-exec --no-startup-id "compton"
+exec --no-startup-id "picom"
 exec --no-startup-id "nm-applet"
 exec --no-startup-id "blueman-applet"
 exec --no-startup-id "nitrogen --restore"
-exec --no-startup-id "xss-lock -- i3lock -n -i ~/dotfiles/assets/background.png"
+exec --no-startup-id "xss-lock -- i3lock -n -i ~/dotfiles/assets/background2.png"
+exec --no-startup-id "dunst"

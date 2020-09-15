@@ -34,13 +34,13 @@ ethernet _first_ {
 }
 
 battery 0 {
-        format = "Power: %status %percentage"
+        format = "Bat: %status %percentage"
         path = "/sys/class/power_supply/CMB0/uevent"
 
 }
 
 tztime local {
-        format = "Date: %Y-%m-%d Time: %H:%M:%S"
+        format = "%m/%d/%Y - %H:%M  "
 }
 
 load {
@@ -57,12 +57,12 @@ disk "/" {
 }
 
 memory{
-  format = "Memory: %used/%total"
+  format = "Mem: %used/%total"
 }
 
 volume master {
-        format = "Volume: %volume"
-        format_muted = "#Volume: muted (%volume)"
+        format = "Vol: %volume"
+        format_muted = "#Vol: muted (%volume)"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
